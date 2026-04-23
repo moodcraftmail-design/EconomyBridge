@@ -1,0 +1,25 @@
+name: EconomyBridge
+version: 1.0
+main: me.economybridge.Main
+api-version: "1.20"
+description: Connect Skript economy variables with QuickShop-Hikari shop prices
+
+authors:
+  - moodcraftmail-design
+depend:
+  - Skript
+  - QuickShop-Hikari
+
+commands:
+  shopupdate:
+    description: Synchronize all QuickShop prices with Skript economy variables
+    usage: /shopupdate
+    permission: economybridge.admin
+    aliases:
+      - syncshop
+      - updateshops
+
+permissions:
+  economybridge.admin:
+    description: Permission to use /shopupdate command
+    default: op
